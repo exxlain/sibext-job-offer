@@ -3,7 +3,7 @@
     <div class="wrapper_info">
       <header class="header">
         <div class="header_wrapper">
-          <img class="header_logo" src="../assets/logo.png" width="100"/>
+          <img class="header_logo" src="../assets/logo.png" width="100" height="37"/>
           <div class="info_wrapper">
             <div  class="info">Мы готовы предложить</div>
           </div>
@@ -136,7 +136,7 @@ import InfoBlock from './InfoBlock.vue';
     border-radius: 5px;
   }
   .wrapper_info {
-    margin: 20px 13.5% 20px 13.5%;
+    margin: 20px 13.5%;
   }
   .header_wrapper {
     display: flex;
@@ -151,11 +151,13 @@ import InfoBlock from './InfoBlock.vue';
   .info {
     font-size: 2.0rem;
     font-weight: bold;
+    white-space: nowrap;
     padding: 0;
     margin: 0;
-  }
+
+    }
   .info_heading {
-   margin: 0 0 0 25%;
+    margin: 0 0 0 25%;
     font-size: 1rem;
     font-weight: normal;
   }
@@ -197,7 +199,7 @@ import InfoBlock from './InfoBlock.vue';
     width: 75%;
   }
   .welcome {
-    color: #dc5d78;
+    color: red;
     text-align: center;
     font-size: 1.2rem;
   }
@@ -216,7 +218,7 @@ import InfoBlock from './InfoBlock.vue';
     background-color: #12c2f4;
     font-size: 0.5rem;
     position: absolute;
-    bottom: 33px;
+    top: -10%;
     padding: 0.8% 1.9%;
     right: -7px;
     border: 1px solid white;
@@ -245,5 +247,40 @@ import InfoBlock from './InfoBlock.vue';
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
+  }
+  @media (max-width:768px) {
+    .wrapper_info {
+      margin: 10px 5%;
+    }
+    .main_items_wrapper {
+      margin: 20px auto;
+    }
+    .header_logo {
+      width: 70px;
+      height: 28px;
+      margin-top: 0;
+    }
+    .logo {
+      display: none;
+    }
+    .info {
+      font-size: 1.3rem;
+    }
+    .info_heading, .quote_border, .cite_text{
+     display: none;
+    }
+    .button {
+      font-size: 1.0rem;
+      position: relative;
+      width: 50%;
+    }
+    .footer {
+      margin: 10px 5%;
+      width: 90%;
+    }
+    .button::before {
+      font-size: 1.0rem;
+      bottom: -27px;
+    }
   }
 </style>

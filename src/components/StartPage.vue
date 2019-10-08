@@ -79,7 +79,7 @@ export default {
     background-color: #12c2f4;
     font-size: 0.5rem;
     position: absolute;
-    bottom: 42px;
+    bottom: 77%;
     padding: 0.8% 1.7%;
     right: -7px;
     border: 1px solid white;

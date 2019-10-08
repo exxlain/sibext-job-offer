@@ -18,7 +18,6 @@
             что нужно для продуктивной деятельности!</div>
           <button class="button" @click="$router.push('offer')">Жми сюда</button>
         </div>
-        <hr class="line"/>
       </main>
     </div>
   </div>
@@ -67,20 +66,20 @@ export default {
   .info_heading {
     text-align: left;
     font-size: 2.8rem;
-    line-height: 0.7;
-    margin-top: 35px;
-    margin-bottom: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
   .info_text {
     text-align: left;
     font-size: 1.3rem;
-    line-height: 0.7;
+    margin: 0;
+    line-height: 1.5em;
   }
   .info_text_second {
     text-align: left;
     font-size: 1.3rem;
     margin-top: 3px;
-    line-height: 0.7;
+    line-height: 1.5em;
   }
   .info_header_bold {
     font-weight: bold;
@@ -89,7 +88,8 @@ export default {
     color: white;
     font-size: 0.8rem;
     text-transform: uppercase;
-    padding: 1% 4%;
+    width: 150px;
+    height: 35px;
     border: none;
     border-radius: 5px;
     margin-bottom: 28px;
@@ -102,7 +102,7 @@ export default {
     background-color: #12c2f4;
     font-size: 0.5rem;
     position: absolute;
-    bottom: 20px;
+    bottom: 77%;
     padding: 0.8% 1.9%;
     right: -7px;
     border: 1px solid white;
@@ -110,5 +110,6 @@ export default {
   .button_wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 </style>
